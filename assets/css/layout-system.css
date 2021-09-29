@@ -1,0 +1,156 @@
+/* Layout System - Using CSS Display, Float, Position */
+/* By R.Z */
+
+/* force box size */
+* {
+    box-sizing: border-box;
+  }
+
+/*wrappers*/
+
+/* wrap level 1 */
+  .container {
+    background-color: aqua;
+    border: 5px solid blue;
+    display:block;
+    width:80%;
+    margin:auto;
+}
+
+/* wrap level 2 */
+.box {
+    background-color: yellow;
+    border: 5px solid orange;
+    display:inline-block;
+    width:100%;
+}
+
+/* wrap level 3 */
+.row {
+    background-color: violet;
+    border: 5px solid purple;
+    display:block;
+}
+
+/*position left and right*/
+
+.pos-right {
+    background-color:darkgrey;
+    border:1px solid black;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.pos-left {
+    background-color:darkgray;
+    border:1px solid black;
+    position:absolute;
+    top:0;
+    left:0;
+} 
+
+/* columns. It has position relative to use position absolute inside them. Clearfix hack at the end*/
+
+  .col-1 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 8.33%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-2 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 16.66%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-3 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 25%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-4 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 33.33%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-5 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 41.66%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-6 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 50%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-7 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 58.33%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-8 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 66.66%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-9 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 75%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-10 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 83.33%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-11 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 91.66%;
+    float: left;
+    position:relative;
+  }
+  
+  .col-12 {
+    background-color: pink;
+    border: 5px solid red;
+    width: 100%;
+    float: left;
+    position:relative;
+  }
+
+/*clear fix hack to avoid collapsed div when using position in child under row*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 

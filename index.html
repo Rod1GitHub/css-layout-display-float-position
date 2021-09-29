@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout System - Using CSS Display, Float, Position</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout-system.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Layout System - Using CSS Display, Float, Position</h1>
+        <p>div / container / level 1 / width:80%; margin:auto;</p> 
+                <nav class="row">
+                    <p>nav / row / level 3</p>
+                </nav>
+            <div class="box">
+                <p>div / box / level 2</p>
+                <div class="row"> <!-- to create aside layout -->
+                <div class="col-8">
+                    <p>div / col-8</p>
+                <header class="row"><p>header / row / level 3</p>
+                    <div class="col-12">
+                        <p>div / col-12</p>
+                    </div>
+                </header>
+                <main class="row"><p>main / row / level 3</p></main>
+                <section class="row"><p>section / row / level 3</p>
+                    <div class="col-4">
+                        <p>div / col-4</p>
+                    </div>
+                    <div class="col-8">
+                            <p >div / col-8 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum amet accusamus sed perferendis at aperiam nam similique quae doloremque. Neque eaque est totam assumenda, explicabo tempora nesciunt deleniti cumque!</p>
+                    </div>
+                </section>
+                <article class="row">
+                    <p>article / row / level 3</p>
+                    <div class="col-6"><p class="pos-right">position right / col-6</p>
+                        <div class="row"><p>div / row</p>
+                            <div class="col-6">
+                                <p>div / col-6</p>
+                            </div>
+                            <div class="col-6">
+                                <p>div / col-6</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-6">
+                            <p>div / col-6</p>
+                        </div>
+                </article>
+            </div>
+            <div class="col-4">
+                <p>div / col-4</p>
+                <p class="pos-right">position right / col-4</p>
+                <aside class="row">
+                    <p>aside / row / level 3</p>
+                    
+                </aside>
+            </div>
+            </div> 
+        </div>
+                <footer class="row"><p>footer / row / level 3</p></footer>
+    </div>
+        
+
+
+
+
+</body>
+</html>
