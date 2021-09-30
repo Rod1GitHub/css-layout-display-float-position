@@ -9,27 +9,26 @@
     <link rel="stylesheet" href="./assets/css/layout-system.css">
     <link rel="stylesheet" href="./assets/css/media-query.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
-    
+
 </head>
 <body>
 
     <div class="container">
         <h1>Layout System - Using CSS Display, Float, Position</h1>
         <p>div / container / level 1 / width:80%; margin:auto;</p> 
-                <nav class="row">
-                    <p>nav / row / level 3. Position Fixed</p>
+                <nav class="row rodrigo">
+                    <p>nav / row / level 3. position fixed</p>
                 </nav>
-            <div class="box">
-                <p>div / box / level 2</p>
-                <div class="row"> <!-- to create aside layout -->
-                <div class="col-8">
-                    <p>div / col-8</p>
                 <header class="row"><p>header / row / level 3</p>
                     <div class="col-12">
                         <p>div / col-12</p>
                     </div>
                 </header>
+            <div class="box">
+                <p>div / box / level 2</p>
+                <div class="row"> <!-- to create aside layout -->
+                <div class="col-8">
+                    <p>div / col-8</p>
                 <main class="row"><p>main / row / level 3</p></main>
                 <section class="row"><p>section / row / level 3</p>
                     <div class="col-4">
@@ -62,7 +61,20 @@
                 <p class="pos-right">position right / col-4</p>
                 <aside class="row">
                     <p>aside / row / level 3</p>
-                    
+                    <div class="col-12">
+                        <p>div col-12</p>
+                        <h1>Estrategia:</h1>
+                        <br>
+                        <p>Se utilizan 4 niveles de cajas. La 1 y 2 son wrappers generales. La 3 y 4 son para contenido. El tag semantico siempre va en el nivel 3 (row) y luego se escribe el contenido en el interior del nivel 4 (column).</p>
+                        <br>
+                        <p>Nivel 1: Container - Cyan
+                            <br>
+                        Nivel 2: Box - Amarillo
+                        <br>
+                        Nivel 3: Row - Morado (todo tag semántico va dentro de Row)
+                        <br>
+                        Nivel 4: Column - Rojo</p>
+                    </div>
                 </aside>
             </div>
             </div> 
