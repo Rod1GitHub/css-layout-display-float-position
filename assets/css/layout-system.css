@@ -50,6 +50,14 @@
     left:0;
 } 
 
+.pos-fixed {
+    border:5px solid black;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    width:inherit;
+}
+
 /* columns. It has position relative to use position absolute inside them. Clearfix hack at the end*/
 
   .col-1 {
